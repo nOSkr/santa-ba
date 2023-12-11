@@ -19,6 +19,7 @@ import usersRoutes from "./routes/users.js";
 import mediasRoutes from "./routes/media.js";
 import bannerRoutes from "./routes/banner.js";
 import giftRoutes from "./routes/gift.js";
+import giftTypeRoutes from "./routes/giftType.js";
 
 // Аппын тохиргоог process.env рүү ачаалах
 dotenv.config({ path: "./config/config.env" });
@@ -99,6 +100,7 @@ app.use("/users", usersRoutes);
 app.use("/banners", bannerRoutes);
 app.use("/gifts", giftRoutes);
 app.use("/media", mediasRoutes);
+app.use("/giftType", giftTypeRoutes);
 // Алдаа үүсэхэд барьж авч алдааны мэдээллийг клиент тал руу автоматаар мэдээлнэ
 app.use(errorHandler);
 
