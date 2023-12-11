@@ -16,8 +16,8 @@ export const getGifts = asyncHandler(async (req, res, next) => {
   const gifts = await Gift.find(req.query, select)
     .sort(sort)
     .skip(pagination.start - 1)
-    .limit(limit);
-
+    .limit(limit)
+    .populate(["GiftType"]);
   res.status(200).json({
     success: true,
     count: gifts.length,
