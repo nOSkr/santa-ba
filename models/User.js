@@ -21,6 +21,8 @@ const UserSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
+  expoPushToken: String,
+  version: String,
   password: {
     type: String,
     minlength: 4,

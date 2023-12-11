@@ -14,7 +14,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.1.2",
     "aws-sdk": "^2.1473.0",
-    "axios": "1.2.6",
+    "axios": "^1.2.6",
     "bcrypt": "^5.1.1",
     "blurhash": "^2.0.5",
     "colors": "1.4.0",
